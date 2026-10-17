@@ -19,7 +19,16 @@ netlify.toml
 
 ## Content comes from the Google Sheet
 
-Everything shown is managed in the **Illustrations** tab of the [content sheet](https://docs.google.com/spreadsheets/d/1UIpV8mZ21NTqJUWMbw5NK1V4cWFjuTbRUxpxlvOWljk/edit). The sheet must stay shared as "Anyone with the link can view".
+Everything shown is managed in the **Illustrations** tab of the content sheet. The sheet must stay shared as "Anyone with the link can view".
+
+The sheet is configured only through environment variables (never in code):
+
+| Variable | Value |
+| --- | --- |
+| `SHEET_ID` | The long ID in the sheet URL: `/spreadsheets/d/<ID>/edit` |
+| `SHEET_GID` | The tab ID: `#gid=<GID>` in the URL when the Illustrations tab is open |
+
+Set them in Netlify under **Site configuration → Environment variables** (scopes: Builds and Functions). For local runs, copy `.env.example` to `.env` (git-ignored); `netlify dev` loads it. The browser never sees these values: it only calls `/api/illustrations`.
 
 Sheet edits go live without a redeploy: the page reads the sheet through `/api/illustrations`, which Netlify caches for about a minute. Only new image files need a deploy.
 

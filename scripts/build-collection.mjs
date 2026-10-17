@@ -2,7 +2,7 @@
 import { mkdir, readdir, readFile, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { fetchSheetRows, SHEET_URL } from "../lib/sheet.mjs";
+import { fetchSheetRows } from "../lib/sheet.mjs";
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const publicDir = path.join(root, "public");
@@ -19,7 +19,7 @@ async function loadRows() {
 	try {
 		const rows = await fetchSheetRows();
 		await mkdir(path.dirname(snapshotFile), { recursive: true });
-		await writeFile(snapshotFile, `${JSON.stringify({ source: SHEET_URL, fetchedAt: new Date().toISOString(), rows }, null, "\t")}\n`);
+		await writeFile(snapshotFile, `${JSON.stringify({ fetchedAt: new Date().toISOString(), rows }, null, "\t")}\n`);
 		console.log(`Fetched ${rows.length} row(s) from the sheet.`);
 		return rows;
 	} catch (error) {

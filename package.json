@@ -3,7 +3,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"build": "node scripts/build-collection.mjs",
+		"build": "node --env-file-if-exists=.env scripts/build-collection.mjs",
 		"preview": "npm run build && npx -y netlify-cli dev --offline --port 8888"
 	},
 	"dependencies": {

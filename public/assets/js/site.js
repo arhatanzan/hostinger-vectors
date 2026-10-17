@@ -1,7 +1,4 @@
-import { parseCsv } from "./csv.js";
-
 const LIVE_SOURCE = "api/illustrations";
-const SHEET_SOURCE = "https://docs.google.com/spreadsheets/d/1UIpV8mZ21NTqJUWMbw5NK1V4cWFjuTbRUxpxlvOWljk/gviz/tq?tqx=out:csv&headers=1&gid=526555760";
 const BUILD_SOURCE = "data/collection.json";
 const DEFAULT_RATIO = "3 / 2";
 const SAFE_PATH = /^(illustrations|previews)\/(?!.*\.\.)[\w\-./ ]+\.(png|jpe?g|webp|avif|gif)$/i;
@@ -80,24 +77,9 @@ async function getJson(url, timeout) {
 	}
 }
 
-async function getSheetRows(timeout) {
-	try {
-		const response = await fetch(SHEET_SOURCE, { cache: "no-store", signal: AbortSignal.timeout(timeout) });
-		if (!response.ok) return null;
-		const { keys, records } = parseCsv(await response.text());
-		return keys.includes("file") ? records : null;
-	} catch {
-		return null;
-	}
-}
-
-async function loadLiveRows() {
-	const live = await getJson(LIVE_SOURCE, 8000);
-	return Array.isArray(live?.rows) ? live.rows : getSheetRows(8000);
-}
-
 async function loadWorks() {
-	const [build, liveRows] = await Promise.all([getJson(BUILD_SOURCE, 10000), loadLiveRows()]);
+	const [build, live] = await Promise.all([getJson(BUILD_SOURCE, 10000), getJson(LIVE_SOURCE, 8000)]);
+	const liveRows = live?.rows;
 	const images = build?.images && typeof build.images === "object" ? build.images : {};
 	const rows = [liveRows, build?.rows].find(Array.isArray) ?? [];
 	const seen = new Set();
