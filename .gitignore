@@ -1,0 +1,5 @@
+node_modules/
+.netlify/
+public/data/collection.json
+public/previews/
+public/assets/brand/*-160.webp

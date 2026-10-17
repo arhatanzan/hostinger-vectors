@@ -1,0 +1,12 @@
+{
+	"name": "kaif-abbas-illustrations",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"build": "node scripts/build-collection.mjs",
+		"preview": "npm run build && npx -y netlify-cli dev --offline --port 8888"
+	},
+	"dependencies": {
+		"sharp": "^0.34.0"
+	}
+}

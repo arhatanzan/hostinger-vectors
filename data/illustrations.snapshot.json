@@ -1,0 +1,72 @@
+{
+	"source": "https://docs.google.com/spreadsheets/d/1UIpV8mZ21NTqJUWMbw5NK1V4cWFjuTbRUxpxlvOWljk/export?format=csv&gid=526555760",
+	"fetchedAt": "2026-10-17T10:01:21.890Z",
+	"rows": [
+		{
+			"id": "1",
+			"file": "literature-proxy-climatology",
+			"title": "Literature as Proxy Data in Historical Climatology",
+			"subtitle": "A visual note on the stories records leave behind, and the climates we recover from them.",
+			"category": "editorial, nature",
+			"alt": "An open illustrated book surrounded by weather, historic buildings, and the words Literature as Proxy Data in Climatology.",
+			"aigenerated": "0",
+			"featured": "1",
+			"flag": "1"
+		},
+		{
+			"id": "2",
+			"file": "elephant-waterhole",
+			"title": "At the Waterline",
+			"subtitle": "A quiet encounter between an elephant and a landscape holding its breath.",
+			"category": "wildlife",
+			"alt": "A richly patterned elephant standing at a waterhole beneath a golden sunset.",
+			"aigenerated": "0",
+			"featured": "1",
+			"flag": "1"
+		},
+		{
+			"id": "3",
+			"file": "literature-proxy-climatology",
+			"title": "Literature as Proxy Data in Historical Climatology",
+			"subtitle": "A visual note on the stories records leave behind, and the climates we recover from them.",
+			"category": "nature",
+			"alt": "An open illustrated book surrounded by weather, historic buildings, and the words Literature as Proxy Data in Climatology.",
+			"aigenerated": "0",
+			"featured": "0",
+			"flag": "1"
+		},
+		{
+			"id": "4",
+			"file": "elephant-waterhole",
+			"title": "At the Waterline",
+			"subtitle": "A quiet encounter between an elephant and a landscape holding its breath.",
+			"category": "wildlife",
+			"alt": "A richly patterned elephant standing at a waterhole beneath a golden sunset.",
+			"aigenerated": "0",
+			"featured": "0",
+			"flag": "0"
+		},
+		{
+			"id": "5",
+			"file": "literature-proxy-climatology",
+			"title": "Literature as Proxy Data in Historical Climatology",
+			"subtitle": "A visual note on the stories records leave behind, and the climates we recover from them.",
+			"category": "editorial, nature",
+			"alt": "An open illustrated book surrounded by weather, historic buildings, and the words Literature as Proxy Data in Climatology.",
+			"aigenerated": "0",
+			"featured": "0",
+			"flag": "0"
+		},
+		{
+			"id": "6",
+			"file": "elephant-waterhole",
+			"title": "At the Waterline",
+			"subtitle": "A quiet encounter between an elephant and a landscape holding its breath.",
+			"category": "nature",
+			"alt": "A richly patterned elephant standing at a waterhole beneath a golden sunset.",
+			"aigenerated": "0",
+			"featured": "0",
+			"flag": "0"
+		}
+	]
+}

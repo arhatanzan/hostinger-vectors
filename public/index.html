@@ -1,0 +1,106 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="theme-color" content="#10263f">
+		<meta name="description" content="Illustrations curated by Kaif Abbas: visual field notes on history, wildlife, and civic life.">
+		<title>Illustrations | Kaif Abbas</title>
+		<link rel="icon" href="assets/brand/kaif-abbas.png" type="image/png">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/site.css">
+		<script src="assets/js/site.js" type="module"></script>
+	</head>
+	<body>
+		<div class="ornament" aria-hidden="true"></div>
+		<header class="site-header">
+			<a class="brand" href="#top" aria-label="Kaif Abbas illustrations home">
+				<span class="brand-mark">
+					<span class="brand-fallback" aria-hidden="true">KA</span>
+					<img src="assets/brand/kaif-abbas-160.webp" data-fallback="assets/brand/kaif-abbas.png" alt="" width="44" height="44">
+				</span>
+				<span class="brand-text">
+					<span class="brand-name">Kaif Abbas</span>
+					<span class="brand-label">Illustrations</span>
+				</span>
+			</a>
+			<nav aria-label="Main navigation">
+				<a href="#works">Archive</a>
+				<a href="#about-ai" id="nav-about-ai" hidden>About the work</a>
+				<a href="https://kaifabbas.com/">kaifabbas.com <span aria-hidden="true">↗</span></a>
+			</nav>
+		</header>
+
+		<main id="top">
+			<section class="hero" aria-labelledby="page-title">
+				<div class="hero-copy">
+					<p class="eyebrow"><span class="eyebrow-mark" aria-hidden="true"></span> An illustrated archive</p>
+					<h1 id="page-title">Small worlds,<br><em>drawn with purpose.</em></h1>
+					<p class="hero-description">Visual field notes on the histories, creatures, and ideas that shape how we see the world.</p>
+					<p class="ai-notice" id="ai-notice" hidden>
+						<span class="ai-badge">AI-generated</span>
+						<span id="ai-notice-text">Works labeled AI-generated are created with generative AI tools and curated by Kaif Abbas.</span>
+					</p>
+					<a class="text-link" href="#works">Explore the archive <span aria-hidden="true">↓</span></a>
+				</div>
+				<figure class="featured" id="featured" hidden>
+					<button class="frame frame-featured" type="button"></button>
+					<figcaption>
+						<span class="featured-label">Featured</span>
+						<span class="featured-title" id="featured-title"></span>
+						<span class="featured-pager" id="featured-pager" hidden>
+							<button type="button" data-step="-1" aria-label="Previous featured illustration">←</button>
+							<span id="featured-position"></span>
+							<button type="button" data-step="1" aria-label="Next featured illustration">→</button>
+						</span>
+					</figcaption>
+				</figure>
+			</section>
+
+			<section class="collection-index" aria-labelledby="index-label">
+				<p class="index-label" id="index-label">A growing collection</p>
+				<p class="index-total"><strong id="index-total">00</strong> works</p>
+				<ul class="index-list" id="index-list"></ul>
+			</section>
+
+			<section class="collection" id="works" aria-labelledby="works-title">
+				<div class="collection-heading">
+					<div>
+						<p class="section-kicker">The archive</p>
+						<h2 id="works-title">Selected work<span class="heading-period">.</span></h2>
+					</div>
+					<p class="work-count" id="work-count" aria-live="polite"></p>
+				</div>
+				<div class="filters" id="filters" role="group" aria-label="Filter illustrations"></div>
+				<div class="work-grid" id="work-grid"></div>
+			</section>
+
+			<section class="about-ai" id="about-ai" aria-labelledby="about-ai-title" hidden>
+				<p class="section-kicker">About the work</p>
+				<h2 id="about-ai-title">Made with AI, chosen with care.</h2>
+				<p>Works labeled AI-generated are made with generative AI tools. Each one begins with an idea, a question from research, a place, or a creature, and is shaped through prompts, iteration, and selection until it says something worth keeping.</p>
+				<a class="text-link text-link-light" href="https://kaifabbas.com/">More about Kaif <span aria-hidden="true">↗</span></a>
+			</section>
+		</main>
+
+		<footer class="site-footer">
+			<span class="footer-mark">KAIF ABBAS <span class="footer-separator">/</span> ILLUSTRATIONS</span>
+			<span>Illustrations curated by Kaif Abbas.<span id="footer-ai" hidden> AI-generated works are labeled.</span></span>
+			<a href="#top">Back to top ↑</a>
+		</footer>
+
+		<dialog class="art-dialog" id="art-dialog" aria-labelledby="dialog-title">
+			<button class="dialog-close" type="button" aria-label="Close image viewer">×</button>
+			<figure>
+				<div class="dialog-frame"><img id="dialog-image" alt=""></div>
+				<figcaption>
+					<span class="dialog-meta"><span id="dialog-category"></span><span class="ai-badge" id="dialog-ai">AI-generated</span></span>
+					<span class="dialog-title" id="dialog-title"></span>
+					<span class="dialog-subtitle" id="dialog-subtitle"></span>
+				</figcaption>
+			</figure>
+		</dialog>
+	</body>
+</html>
