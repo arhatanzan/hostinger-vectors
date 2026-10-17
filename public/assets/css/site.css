@@ -27,6 +27,8 @@ body {
 	color: var(--ink);
 	background: var(--paper);
 	font-family: var(--body);
+	font-size: 16px;
+	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 }
 
@@ -115,13 +117,13 @@ p {
 
 .brand-name {
 	font-family: var(--display);
-	font-size: 17px;
+	font-size: 18px;
 	line-height: 1;
 }
 
 .brand-label {
 	color: var(--rust);
-	font-size: 9px;
+	font-size: 11px;
 	font-weight: 700;
 	letter-spacing: 0.18em;
 	text-transform: uppercase;
@@ -130,7 +132,7 @@ p {
 .site-header nav {
 	display: flex;
 	gap: 28px;
-	font-size: 12px;
+	font-size: 15px;
 	font-weight: 600;
 }
 
@@ -150,7 +152,7 @@ p {
 .section-kicker,
 .index-label,
 .featured-label {
-	font-size: 10px;
+	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 0.16em;
 	text-transform: uppercase;
@@ -161,11 +163,11 @@ p {
 	display: inline-flex;
 	align-items: center;
 	gap: 5px;
-	padding: 3px 7px;
+	padding: 4px 8px;
 	border: 1px solid currentColor;
 	border-radius: 999px;
 	color: var(--ink-soft);
-	font-size: 9px;
+	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
@@ -181,7 +183,7 @@ p {
 .ai-badge::before {
 	content: "✦";
 	color: var(--gold);
-	font-size: 9px;
+	font-size: 12px;
 }
 
 .text-link {
@@ -190,7 +192,7 @@ p {
 	gap: 12px;
 	padding-bottom: 5px;
 	border-bottom: 1px solid var(--gold);
-	font-size: 12px;
+	font-size: 15px;
 	font-weight: 700;
 }
 
@@ -244,7 +246,7 @@ p {
 
 .missing-label {
 	color: var(--muted);
-	font-size: 11px;
+	font-size: 14px;
 	font-weight: 600;
 }
 
@@ -263,6 +265,7 @@ p {
 	display: flex;
 	align-items: center;
 	gap: 10px;
+	font-size: 12px;
 }
 
 .eyebrow-mark {
@@ -288,7 +291,7 @@ h1 em {
 	max-width: 440px;
 	margin-bottom: 20px;
 	color: #4b5964;
-	font-size: 15px;
+	font-size: 17px;
 	line-height: 1.7;
 }
 
@@ -303,7 +306,7 @@ h1 em {
 	border-left: 2px solid var(--gold);
 	background: rgba(215, 161, 59, 0.1);
 	color: var(--ink-soft);
-	font-size: 12px;
+	font-size: 15px;
 	line-height: 1.55;
 }
 
@@ -320,7 +323,7 @@ h1 em {
 
 .featured-title {
 	font-family: var(--display);
-	font-size: 16px;
+	font-size: 18px;
 }
 
 .featured-pager {
@@ -329,7 +332,7 @@ h1 em {
 	align-items: center;
 	gap: 10px;
 	color: var(--muted);
-	font-size: 11px;
+	font-size: 14px;
 	white-space: nowrap;
 }
 
@@ -358,11 +361,11 @@ h1 em {
 }
 
 .featured-badge {
-	padding: 3px 7px;
+	padding: 4px 8px;
 	border-radius: 999px;
 	background: var(--gold);
 	color: var(--ink);
-	font-size: 9px;
+	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 0.08em;
 	text-transform: uppercase;
@@ -383,11 +386,12 @@ h1 em {
 .index-label {
 	margin: 0;
 	color: var(--gold);
+	font-size: 12px;
 }
 
 .index-total {
 	margin: 0;
-	font-size: 13px;
+	font-size: 15px;
 	color: rgba(245, 241, 232, 0.75);
 }
 
@@ -418,7 +422,7 @@ h1 em {
 	background: transparent;
 	color: var(--paper);
 	cursor: pointer;
-	font-size: 12px;
+	font-size: 14px;
 	transition: border-color 160ms ease, background 160ms ease;
 }
 
@@ -429,7 +433,7 @@ h1 em {
 
 .index-count {
 	color: var(--gold);
-	font-size: 10px;
+	font-size: 12px;
 	font-weight: 700;
 }
 
@@ -449,6 +453,7 @@ h1 em {
 
 .section-kicker {
 	margin-bottom: 8px;
+	font-size: 12px;
 }
 
 h2 {
@@ -466,7 +471,7 @@ h2 {
 .work-count {
 	margin: 0 0 4px;
 	color: var(--muted);
-	font-size: 12px;
+	font-size: 14px;
 }
 
 .filters {
@@ -483,14 +488,14 @@ h2 {
 }
 
 .filter-button {
-	min-height: 34px;
+	min-height: 38px;
 	padding: 0 14px;
 	border: 1px solid var(--line);
 	border-radius: 999px;
 	background: transparent;
 	color: #4f5a64;
 	cursor: pointer;
-	font-size: 12px;
+	font-size: 14px;
 	transition: background 160ms ease, color 160ms ease, border-color 160ms ease;
 }
 
@@ -525,7 +530,7 @@ h2 {
 
 .work-category {
 	color: var(--rust);
-	font-size: 10px;
+	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 0.14em;
 	text-transform: uppercase;
@@ -534,7 +539,7 @@ h2 {
 .work-title {
 	margin: 8px 0 6px;
 	font-family: var(--display);
-	font-size: 22px;
+	font-size: 24px;
 	font-weight: 500;
 	line-height: 1.25;
 }
@@ -543,7 +548,7 @@ h2 {
 	max-width: 520px;
 	margin: 0;
 	color: var(--muted);
-	font-size: 13px;
+	font-size: 16px;
 	line-height: 1.65;
 }
 
@@ -578,7 +583,7 @@ h2 {
 	max-width: 620px;
 	margin-bottom: 26px;
 	color: rgba(245, 241, 232, 0.78);
-	font-size: 15px;
+	font-size: 17px;
 	line-height: 1.75;
 }
 
@@ -597,12 +602,12 @@ h2 {
 	align-items: center;
 	gap: 12px 20px;
 	color: var(--muted);
-	font-size: 11px;
+	font-size: 14px;
 }
 
 .footer-mark {
 	color: var(--ink);
-	font-size: 10px;
+	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 0.12em;
 }
@@ -674,7 +679,7 @@ h2 {
 	align-items: center;
 	gap: 12px;
 	color: var(--rust);
-	font-size: 10px;
+	font-size: 12px;
 	font-weight: 700;
 	letter-spacing: 0.12em;
 	text-transform: uppercase;
@@ -682,12 +687,12 @@ h2 {
 
 .dialog-title {
 	font-family: var(--display);
-	font-size: 20px;
+	font-size: 22px;
 }
 
 .dialog-subtitle {
 	color: var(--muted);
-	font-size: 13px;
+	font-size: 16px;
 	line-height: 1.6;
 }
 
@@ -716,8 +721,12 @@ h2 {
 		min-height: 70px;
 	}
 
-	.site-header nav a:not(:last-child) {
+	.site-header nav a:last-child {
 		display: none;
+	}
+
+	.featured figcaption {
+		flex-wrap: wrap;
 	}
 
 	.brand-mark {
